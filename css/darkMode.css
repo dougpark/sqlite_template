@@ -1,0 +1,130 @@
+/* 
+ ios light and dark colors
+ source: https://noahgilmore.com/blog/dark-mode-uicolor-compatibility/
+ June 7, 2020
+ */
+
+.lightMode {
+    --ios-label: #000000ff;
+    --ios-secondaryLabel: #3c3c4399;
+    --ios-tertiaryLabel: #3c3c434c;
+    --ios-quaternaryLabel: #3c3c432d;
+    --ios-systemFill: #78788033;
+    --ios-secondarySystemFill: #78788028;
+    --ios-tertiarySystemFill: #7676801e;
+    --ios-quaternarySystemFill: #74748014;
+    --ios-placeholderText: #3c3c434c;
+    --ios-systemBackground: #ffffffff;
+    --ios-secondarySystemBackground: #f2f2f7ff;
+    --ios-tertiarySystemBackground: #ffffffff;
+    --ios-systemGroupedBackground: #f2f2f7ff;
+    --ios-secondarySystemGroupedBackground: #ffffffff;
+    --ios-tertiarySystemGroupedBackground: #f2f2f7ff;
+    --ios-separator: #3c3c4349;
+    --ios-opaqueSeparator: #c6c6c8ff;
+    --ios-link: #007affff;
+    --ios-darkText: #000000ff;
+    --ios-Text: #000000ff;
+    --ios-lightText: #ffffff99;
+    --ios-systemBlue: #007affff;
+    --ios-systemGreen: #34c759ff;
+    --ios-systemIndigo: #5856d6ff;
+    --ios-systemOrange: #ff9500ff;
+    --ios-systemPink: #ff2d55ff;
+    --ios-systemPurple: #af52deff;
+    --ios-systemRed: #ff3b30ff;
+    --ios-systemTeal: #5ac8faff;
+    --ios-systemYellow: #ffcc00ff;
+    --ios-systemGray: #8e8e93ff;
+    --ios-systemGray2: #aeaeb2ff;
+    --ios-systemGray3: #c7c7ccff;
+    --ios-systemGray4: #d1d1d6ff;
+    --ios-systemGray5: #e5e5eaff;
+    --ios-systemGray6: #f2f2f7ff;
+
+
+}
+
+@media (prefers-color-scheme: xdark) {
+    :root {
+
+        --ios-label: #ffffffff;
+        --ios-secondaryLabel: #ebebf599;
+        --ios-tertiaryLabel: #ebebf54c;
+        --ios-quaternaryLabel: #ebebf52d;
+        --ios-systemFill: #7878805b;
+        --ios-secondarySystemFill: #78788051;
+        --ios-tertiarySystemFill: #7676803d;
+        --ios-quaternarySystemFill: #7676802d;
+        --ios-placeholderTextv: #ebebf54c;
+        --ios-systemBackground: #000000ff;
+        --ios-secondarySystemBackground: #1c1c1eff;
+        --ios-tertiarySystemBackground: #2c2c2eff;
+        --ios-systemGroupedBackground: #000000ff;
+        --ios-secondarySystemGroupedBackground: #1c1c1eff;
+        --ios-tertiarySystemGroupedBackground: #2c2c2eff;
+        --ios-separator: #54545899;
+        --ios-opaqueSeparator: #38383aff;
+        --ios-link: #0984ffff;
+        --ios-darkText: #000000ff;
+        --ios-lightText: #ffffff99;
+        --ios-Text: #ffffff99;
+        --ios-systemBlue: #0a84ffff;
+        --ios-systemGreen: #30d158ff;
+        --ios-systemIndigo: #5e5ce6ff;
+        --ios-systemOrange: #ff9f0aff;
+        --ios-systemPink: #ff375fff;
+        --ios-systemPurple: #bf5af2ff;
+        --ios-systemRed: #ff453aff;
+        --ios-systemTeal: #64d2ffff;
+        --ios-systemYellow: #ffd60aff;
+        --ios-systemGray: #8e8e93ff;
+        --ios-systemGray2: #636366ff;
+        --ios-systemGray3: #48484aff;
+        --ios-systemGray4: #3a3a3cff;
+        --ios-systemGray5: #2c2c2eff;
+        --ios-systemGray6: #1c1c1eff;
+
+    }
+}
+
+.darkMode {
+
+    --ios-label: #ffffffff;
+    --ios-secondaryLabel: #ebebf599;
+    --ios-tertiaryLabel: #ebebf54c;
+    --ios-quaternaryLabel: #ebebf52d;
+    --ios-systemFill: #7878805b;
+    --ios-secondarySystemFill: #78788051;
+    --ios-tertiarySystemFill: #7676803d;
+    --ios-quaternarySystemFill: #7676802d;
+    --ios-placeholderTextv: #ebebf54c;
+    --ios-systemBackground: #000000ff;
+    --ios-secondarySystemBackground: #1c1c1eff;
+    --ios-tertiarySystemBackground: #2c2c2eff;
+    --ios-systemGroupedBackground: #000000ff;
+    --ios-secondarySystemGroupedBackground: #1c1c1eff;
+    --ios-tertiarySystemGroupedBackground: #2c2c2eff;
+    --ios-separator: #54545899;
+    --ios-opaqueSeparator: #38383aff;
+    --ios-link: #0984ffff;
+    --ios-darkText: #000000ff;
+    --ios-lightText: #ffffff99;
+    --ios-Text: #ffffff99;
+    --ios-systemBlue: #0a84ffff;
+    --ios-systemGreen: #30d158ff;
+    --ios-systemIndigo: #5e5ce6ff;
+    --ios-systemOrange: #ff9f0aff;
+    --ios-systemPink: #ff375fff;
+    --ios-systemPurple: #bf5af2ff;
+    --ios-systemRed: #ff453aff;
+    --ios-systemTeal: #64d2ffff;
+    --ios-systemYellow: #ffd60aff;
+    --ios-systemGray: #8e8e93ff;
+    --ios-systemGray2: #636366ff;
+    --ios-systemGray3: #48484aff;
+    --ios-systemGray4: #3a3a3cff;
+    --ios-systemGray5: #2c2c2eff;
+    --ios-systemGray6: #1c1c1eff;
+
+}

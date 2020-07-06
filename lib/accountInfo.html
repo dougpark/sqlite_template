@@ -1,0 +1,54 @@
+<!-- Account Info  -->
+<div id="accountInfo" class="status-hide  z-panel-background w3-container w3-card  w3-margin-top">
+    <h2>Account Info</h2>
+
+    <form class="w3-container">
+        <p>
+            <label>User Id</label>
+            <input id="ai-userId" class="w3-input w3-border-0 z-text" type="text" onblur="setNewUserId(this.value)">
+        </p>
+        <p>
+            <label>Password</label>
+            <input id="ai-pw" class="w3-input w3-border-0 z-text" type="password" onblur="setNewPassword(this.value)">
+        </p>
+        <p>
+            <label>Token</label>
+            <input id="ai-token" class="w3-input w3-border-0 z-text" type="text" onblur="setNewToken(this.value)">
+        </p>
+    </form>
+
+
+</div>
+
+<script>
+    let accountInfo = {};
+    loadAccountInfo();
+
+    function loadAccountInfo() {
+        if (localStorage["accountInfo"]) {
+            accountInfo = JSON.parse(localStorage.getItem('accountInfo'));
+            $('#ai-userId').val(accountInfo.userId);
+            $('#ai-pw').val(accountInfo.pw);
+            $('#ai-token').val(accountInfo.token);
+        }
+    }
+
+    function saveAccountInfo() {
+        localStorage.setItem('accountInfo', JSON.stringify(accountInfo));
+    }
+
+    function setNewUserId(userId) {
+        accountInfo.userId = userId;
+        saveAccountInfo();
+    }
+
+    function setNewPassword(pw) {
+        accountInfo.pw = pw;
+        saveAccountInfo();
+    }
+
+    function setNewToken(token) {
+        accountInfo.token = token;
+        saveAccountInfo();
+    }
+</script>

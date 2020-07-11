@@ -4,6 +4,9 @@
 config.json
 db.json
 
+# sqlite databases
+/db/*.sq3
+
 # standard 
 .DS_Store
 

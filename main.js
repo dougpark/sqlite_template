@@ -22,7 +22,7 @@ ships[4] = new Ship("Tie Fighter", 2); //TIE FIGHTER
 
 // this runs when page is finished loading
 $(document).ready(function () {
-    
+
 
     createTables();
     insertWithTransaction();
@@ -36,7 +36,7 @@ $(document).ready(function () {
 
 
 function tableInfo() {
-    console.log('tableInfo');
+
     $.ajax({
         url: "api.php",
         method: "POST",
@@ -45,7 +45,7 @@ function tableInfo() {
         },
         dataType: "json",
         success: function (response) {
-            console.log(response);
+
             $out = '<li> Table info: <br>';
             $out += 'executionTimeSeconds: ' + response.executionTimeSeconds + '<br>';
             $out += '</li>';
@@ -68,9 +68,7 @@ function version() {
         },
         dataType: "json",
         success: function (response) {
-            console.log(response);
-            console.log(response.result);
-            console.log(response.result[0]['sqlite_version()']);
+
             $out = '<li> Sqlite version: <br>';
             $out += response.result[0]['sqlite_version()'] + "<br>";
             $out += 'executionTimeSeconds: ' + response.executionTimeSeconds + '<br>';
@@ -93,7 +91,7 @@ function insertWithTransaction() {
         },
         dataType: "json",
         success: function (response) {
-            console.log(response);
+
             $out = '<li> Insert with Transactionn: <br>';
             $out += 'rows inserted: ' + rowCount + "<br>";
             $out += 'lastInsertId: ' + response.result + '<br>';
@@ -116,7 +114,7 @@ function insertNoTransaction() {
         },
         dataType: "json",
         success: function (response) {
-            console.log(response);
+
             $out = '<li> Insert no Transactionn: <br>';
             $out += 'rows inserted: ' + rowCount + "<br>";
             $out += 'lastInsertId: ' + response.result + '<br>';
@@ -139,8 +137,7 @@ function createTables() {
         },
         dataType: "json",
         success: function (response) {
-            console.log(response);
-            console.log(response);
+
             $out = '<li> Create tables: <br>';
             $out += 'executionTimeSeconds: ' + response.executionTimeSeconds + '<br>';
             $out += '</li>';

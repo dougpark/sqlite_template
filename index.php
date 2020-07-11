@@ -105,7 +105,28 @@ session_start();
 
     <div class="includeHtml" title="./lib/settings.html"></div>
     <div class="includeHtml" title="./lib/settingsModal.html"></div>
-    <div class="includeHtml" title="./lib/accountInfo.html"></div>
+
+    <!-- Account Info  -->
+    <div id="accountInfo" class="status-hide  z-panel-background w3-container w3-card  w3-margin-top">
+        <h2>Account Info</h2>
+
+        <form class="w3-container">
+            <p>
+                <label>User Id</label>
+                <input id="ai-userId" class="w3-input w3-border-0 z-text" type="text" onblur="setNewUserId(this.value)">
+            </p>
+            <p>
+                <label>Password</label>
+                <input id="ai-pw" class="w3-input w3-border-0 z-text" type="password" onblur="setNewPassword(this.value)">
+            </p>
+            <p>
+                <label>Token</label>
+                <input id="ai-token" class="w3-input w3-border-0 z-text" type="text" onblur="setNewToken(this.value)">
+            </p>
+        </form>
+    </div>
+
+
 
     <!-- Important for jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous">
@@ -119,7 +140,10 @@ session_start();
     <!-- Local Js -->
     <script src="./lib/includeHtml.js"></script>
     <script src="./main.js"></script>
+    <script src="./accountInfo.js"></script>
     <script src="./lib/darkMode.js"></script>
+
+    
 </body>
 
 </html>

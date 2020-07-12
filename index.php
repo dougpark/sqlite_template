@@ -1,6 +1,7 @@
 <?php
 session_start();
 ?>
+
 <!doctype html>
 <html lang="en">
 
@@ -13,9 +14,6 @@ session_start();
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="apple-mobile-web-app-title" content="Sqlite Template">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous"> -->
 
     <!-- w3.css -->
     <link rel="stylesheet" href="./css/w3.css">
@@ -38,10 +36,6 @@ session_start();
 </head>
 
 <body class="w3-content" style="max-width:500px">
-
-
-
-
 
     <!-- Main Nav Bar -->
     <div class="w3-top status-show">
@@ -128,14 +122,8 @@ session_start();
 
 
 
-    <!-- Important for jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous">
-    </script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" crossorigin="anonymous"> -->
-    </script>
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"> -->
-    </script>
-
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
 
     <!-- Local Js -->
     <script src="./lib/includeHtml.js"></script>
@@ -143,7 +131,7 @@ session_start();
     <script src="./accountInfo.js"></script>
     <script src="./lib/darkMode.js"></script>
 
-    
+
 </body>
 
 </html>

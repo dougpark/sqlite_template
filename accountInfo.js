@@ -14,7 +14,7 @@ function loadAccountInfo() {
 }
 
 function saveAccountInfo() {
-     saveToServer();
+    saveToServer();
 
     // use this to save to localstorage on the client
     // localStorage.setItem('accountInfo', window.btoa(JSON.stringify(accountInfo)));
@@ -71,8 +71,8 @@ function loadFromServer() {
         dataType: "json",
         success: function (response) {
 
-            console.log(response);
-            console.log(response.result[0].value);
+            // console.log(response);
+            // console.log(response.result[0].value);
 
             accountInfo = JSON.parse(response.result[0].value);
             $('#ai-userId').val(accountInfo.userId);
